@@ -140,13 +140,13 @@ function initializeBridge() {
                 createUnityInstance(
                     CANVAS,
                     {
-                        dataUrl: 'Build/81654cabceccd1f4b5ec67432f07b10e.data.unityweb',
-                        frameworkUrl: 'Build/b32ed738dc7dbd0e8a08af0ce75de467.framework.js.unityweb',
-                        codeUrl: 'Build/24ec4f1cf93e57857cb6006256cd6600.wasm.unityweb',
+                        dataUrl: 'Build/93c2ba2fe37dd50f9a0744ba74031018.data.unityweb',
+                        frameworkUrl: 'Build/5cb65955d22d8c071956c7545e9121b8.framework.js.unityweb',
+                        codeUrl: 'Build/b81092266474cdaf9115c0b2309514fa.wasm.unityweb',
                         streamingAssetsUrl: 'StreamingAssets',
-                        companyName: 'AltTab3000',
-                        productName: 'Mini Games Obby Challenge',
-                        productVersion: '6.8',
+                        companyName: 'DefaultCompany',
+                        productName: 'SwapSwap',
+                        productVersion: '1.0',
                         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
                         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
                     },
@@ -247,10 +247,6 @@ window.getGameById = function(options) {
 // device
 window.getDeviceType = function() {
     return bridge.device.type
-}
-
-window.getSafeArea = function() {
-    return JSON.stringify(bridge.device.safeArea)
 }
 
 
